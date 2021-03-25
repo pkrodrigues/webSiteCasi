@@ -1,0 +1,112 @@
+#eventos {
+    width: 100%;
+    height: auto;
+    background: url(../img/eventBack.png), url(../img/event.jpg);
+    background-size: cover;
+}
+
+.event-header {
+    width: 100%;
+}
+
+.event-header h2 {
+    margin-left: 67px;
+    color: var(--primary-color);
+    font-size: 38px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 150px;
+    padding-top: 90px;
+}
+
+.event-logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/evento.svg);
+    text-align: center;
+}
+
+.event-content {
+    max-width: 800px;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+}
+
+.event-card {
+    background-color: gray;
+    border-radius: 20px;
+}
+
+#eventos .event-content .event-case h2 {
+    color: #C4C4C4;
+}
+
+.card_image-container img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.card_content,
+.card_info {
+    padding: 24px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+/* ----------------modal----------------- */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFF;
+    width: 80%;
+    height: 80%;
+    margin: 15vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+/* ==========modal active========== */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+}

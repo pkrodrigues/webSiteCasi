@@ -1,121 +1,123 @@
-    .container {
-        position: relative;
-        background: url(../img/vectorMain.svg) #FFF no-repeat bottom;
-        width: 100%;
-        height: 100vh;
-    }
-    
-    header {
-        width: 100vw;
-        height: 200px;
-    }
-    
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 50px;
-        font-family: Ubuntu, sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-    
-    .menu ul {
-        position: relative;
-        float: right;
-        right: 50px;
-        list-style: none;
-        top: 30px;
-    }
-    
-    .menu ul li {
-        display: inline;
-        margin: 0 15px;
-        padding: 10px;
-    }
-    
-    .menu ul li a {
-        text-decoration: none;
-        color: #000;
-        display: inline-block;
-    }
-    
-    .menu ul li a:hover {
-        color: var(--primary-color);
-    }
-    
-    .menu .logo {
-        display: block;
-        float: left;
-        background-image: url(../img/CASI_Branco-removebg-preview.png);
-        width: 180px;
-        height: 100px;
-        position: relative;
-        background-size: 100%;
-        background-position: center;
-        left: 67px;
-        top: 38px;
-    }
-    /* Main */
-    
-    main {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .main-content-one {
-        max-width: 540px;
-        height: auto;
-        margin-left: 73px;
-    }
-    
-    .main-content-one h1 {
-        color: var(--primary-color);
-        font-size: 36px;
-        font-weight: 600;
-        margin-bottom: 50px;
-    }
-    
-    .main-content-one .buttons {
-        display: block;
-        font-size: 24px;
-        margin: 10px 0;
-        border-radius: 8px;
-        padding: 8px;
-        text-align: center;
-    }
-    
-    .main-content-one .buttons a {
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: 400;
-    }
-    
-    .main-content-one #buttonCal {
-        background-color: var(--dracula-color);
-    }
-    
-    .main-content-one #buttonCal:hover {
-        background-color: var(--draculawhite-color);
-        transition-duration: 0.7s;
-    }
-    
-    .main-content-one #buttonCal a {
-        color: white;
-    }
-    
-    .main-content-one #buttonVet {
-        background-color: var(--graywhite-color);
-    }
-    
-    .main-content-one #buttonVet:hover {
-        background-color: rgb(109, 103, 103);
-        transition-duration: 0.7s;
-    }
-    
-    .main-content-one #buttonVet a {
-        color: black;
-    }
+#home {
+    /* background: url(../img/mainVetorOne.png) bottom no-repeat, rgb(0, 0, 0) url(../img/backgroundMainTwo.jpg) no-repeat; */
+    background: url(../img/main.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#home header {
+    width: 100%;
+    height: 200px;
+}
+
+nav.menu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+nav.menu ul {
+    float: right;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav.menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav.menu .logo {
+    float: left;
+    background: url(../img/casiLogoB.png) #ffffff;
+    width: 160px;
+    height: 80px;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    left: 67px;
+    top: 5px;
+    border-radius: 40px;
+}
+
+
+/* Main */
+
+#home main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-content-one {
+    max-width: 540px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-content-one h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.main-content-one .buttons {
+    display: block;
+    font-size: 24px;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.main-content-one .buttons a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main-content-one #buttonCal {
+    background-color: var(--dracula-color);
+}
+
+.main-content-one #buttonCal:hover {
+    background-color: var(--draculawhite-color);
+    transition-duration: 0.7s;
+}
+
+.main-content-one #buttonCal a {
+    color: white;
+}
+
+.main-content-one #buttonVet {
+    background-color: var(--graywhite-color);
+}
+
+.main-content-one #buttonVet:hover {
+    background-color: rgb(109, 103, 103);
+    transition-duration: 0.7s;
+}
+
+.main-content-one #buttonVet a {
+    color: black;
+}
