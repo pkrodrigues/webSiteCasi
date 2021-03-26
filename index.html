@@ -17,14 +17,15 @@
 
 <body>
     <div class="container" id="home">
-        <nav class="menu">
-            <a class="logo" href="/" title="Centro Acadêmico de Sistema de Informação"></a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
+        <nav class="menu" id="myMenu">
+            <a class="logo active" href="/" title="Centro Acadêmico de Sistema de Informação"></a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#contatos">Contatos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i><img src="assets/img/menu.svg"></i>
+            </a>
         </nav>
         <main>
             <section class="main-content-one">
@@ -32,9 +33,6 @@
                 <span class="buttons" id="buttonCal"><a href="\calouros">Sou Calouro</a></span>
                 <span class="buttons" id="buttonVet"><a href="\veteranos">Sou Veterano</a></span>
             </section>
-            <!-- <section class="main-notbook">
-                <img src="assets/img/notebookBackground.png" alt="Imagem de um notebook">
-            </section> -->
         </main>
     </div>
 
@@ -42,7 +40,9 @@
         <section class="sobre-content">
             <header>
                 <span class="tag-one"></span><span class="tag-one"></span><span class="tag-one"></span>
-                <h1><span class="tag">&lth1&gt</span> Conheça-nos: <span class="tag">&lt/h1&gt</span></h1>
+                <span class="tag">&lth1&gt</span>
+                <h1> Conheça-nos:</h1>
+                <span class="tag">&lt/h1&gt</span>
             </header>
 
             <main>
@@ -64,8 +64,6 @@
         <section class="sobre-slide">
 
             <div class="slideshow-container">
-
-
                 <div class="mySlides fade">
                     <img class="selected" src="assets/img/smarthCasi.png" alt="Smartphone com a logo do Casi">
                 </div>
@@ -187,30 +185,48 @@
     </div>
 
     <div id="contatos" class="container">
-        <h2>Fale Conosco :</h2>
-
-        <div class="form-contact">
-            <form action="enviar.php" method="post">
-                <div class="card-form">
-                    <label for="nome">Nome <span class="arrow"></span></label>
-                    <input type="text" name="nome" id="nome">
+        <header>
+            <h2>Fale Conosco :</h2>
+        </header>
+        <main>
+            <div class="form-contact">
+                <form action="enviar.php" method="post">
+                    <div class="card-form">
+                        <label for="nome">Nome <span class="arrow"></span></label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="card-form">
+                        <label for="email">Email <span class="arrow"></span></label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="card-form">
+                        <label for="phone">Telefone <span class="arrow"></span>
+                        </label><input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="card-form">
+                        <label for="msg">Mensagem <span class="arrow"></span></label>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Run" id="enviar">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+            <div class="contats-maps">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550.8975653111232!2d-43.37448130837409!3d-21.742211777896948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c644236451b%3A0xdc8bb126aca54c14!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Sudeste%20de%20Minas%20Gerais%20-%20Campus%20Juiz%20de%20Fora!5e0!3m2!1spt-BR!2sbr!4v1616694433314!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="card-form">
-                    <label for="email">Email <span class="arrow"></span></label>
-                    <input type="text" name="email" id="email">
+                <div class="links">
+                    <a href="">casi.bsi</a>
+                    <a href="">mail.bsi</a>
+                    <a href="">(00) 90000-0000</a>
                 </div>
-                <div class="card-form">
-                    <label for="phone">Telefone <span class="arrow"></span>
-                    </label><input type="text" name="phone" id="phone">
-                </div>
-                <div class="card-form">
-                    <label for="msg">Mensagem <span class="arrow"></span></label>
-                    <input type="text" name="msg" id="msg">
-                </div>
-
-            </form>
-        </div>
-
+            </div>
+        </main>
+        <footer class="rodape">
+            <span class="logo"></span>
+            <p>&copy Copyright - 2021 Patrick Rodrigues</p>
+        </footer>
     </div>
 
 

@@ -110,3 +110,27 @@ iframe {
     position: absolute;
     top: 10%;
 }
+
+@media screen and (max-width: 720px) {
+    .event-content {
+        max-width: 680px;
+        height: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .event-content {
+        max-width: 440px;
+        height: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px;
+    }
+}

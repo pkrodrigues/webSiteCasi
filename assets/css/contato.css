@@ -1,10 +1,163 @@
 #contatos {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    background: url(../img/contatosFundo.svg) no-repeat;
+    background-size: cover;
 }
 
-#contatos h2 {
-    /* margin: px 0 15px 67px; */
-    font-size: 32px;
+#contatos header {
+    padding: 67px;
+}
+
+#contatos header h2 {
+    margin-top: 20px;
+    font-size: 1.6rem;
     color: var(--secondary-color);
+}
+
+#contatos main {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#contatos main .form-contact {
+    width: 50%;
+    height: auto;
+    margin-left: 67px;
+    margin-bottom: 60px;
+}
+
+#contatos main .form-contact input[type="text"],
+textarea {
+    display: block;
+    background-color: var(--graywhite-color);
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#contatos main .form-contact input[type="submit"] {
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#contatos main .form-contact input[type="submit"]:hover {
+    background-color: rgb(123, 123, 199);
+    transition-duration: 0.8s;
+}
+
+#contatos main .form-contact input[type="reset"] {
+    background-color: var(--red-color);
+    width: 20%;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#contatos main .form-contact input[type="reset"]:hover {
+    background-color: rgb(197, 94, 94);
+    transition-duration: 0.8s;
+}
+
+#contatos main .contats-maps {
+    width: 50%;
+    height: auto;
+    margin: 0 50px 60px 0;
+    /* margin-bottom: 60px;
+    margin-right: 60px; */
+}
+
+#contatos main .contats-maps .map {
+    width: 100%;
+    height: 70%;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#contatos main .contats-maps .map iframe {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+#contatos main .contats-maps .links {
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+
+#contatos main .contats-maps .links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rodape {
+    background: #000;
+    width: 100%;
+    height: 60px;
+}
+
+.rodape p {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 980px) {
+    #contatos main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    #contatos main .form-contact {
+        width: 90%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    contatos main .form-contact input[type="text"],
+    textarea {
+        display: block;
+        background-color: var(--graywhite-color);
+        width: 70%;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #contatos main .contats-maps {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #contatos main .contats-maps .map {
+        width: 100%;
+        height: 100%;
+        background-color: var(--secondary-color);
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contatos main {
+        width: 100%;
+        height: auto;
+    }
+    #contatos main .form-contact {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
